@@ -1,0 +1,469 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    height: 80vh;
+    width: 100vw;
+   background-image: url(/Nitflex/image.png);
+   background-repeat:no-repeat;
+   background-size: max(1000px , 100vw );
+   background-position: center center;
+   filter: brightness(200%)
+   
+   
+}
+
+.main_box{
+    height: 80vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.862);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 80vw;
+    height: 100px;
+    padding-top: 10px;
+
+}
+.nav .nav_logo{
+    height: 75%;
+    width: 15%;
+    color: red;
+   fill: currentColor;
+   transform: scale(0.6);
+}
+.box_content{
+    height: 82%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* position: relative; */
+
+}
+.box_content h1{
+    font-family:  Helvetica, sans-serif;
+    margin: 0 0 0 8px;
+    font-size: 48px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.888);
+    /* line-height:60px; */
+}
+.box_content p{
+    font-family:  Helvetica, sans-serif;
+    margin: 0 0 0 8px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.888);
+}
+.box_content h3{
+    font-family:  Helvetica, sans-serif;
+    margin: 0 0 0 8px;
+    text-align: center;
+     color: rgba(255, 255, 255, 0.888);
+}
+h3+div{
+    margin-top: 8px;
+}
+#email{
+    height: 2.8rem;
+    width: 350px;
+    padding-left: 10px;
+    font-size: 15px;
+    background-color: rgba(20, 20, 20, 0.608);
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.614);
+    border: 3px solid transparent;
+    margin-right: 10px;
+}
+#email:active{
+    border: 3px solid rgba(255, 255, 255, 0.911);
+}
+#button{
+    height:3.1rem;
+    width: 180px;
+    padding-left: 10px;
+    background-color: rgba(255, 0, 0, 0.911);
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+
+    }
+#button:active{
+        background-color: rgba(255, 0, 0, 0.726);
+        /* transform: none; */
+
+}
+@media(max-width:1000px){
+    #email {
+      width: 180px;
+    }
+    #button{
+        width:140px ;
+    }
+}
+.box_email{
+    display: flex;
+}
+
+.trend{
+    bottom: 20px;
+    position: relative;
+    height: 80px;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+.trend h2{
+    font-family:  Helvetica, sans-serif;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    
+
+}
+.curved-container {
+    position: relative;
+    
+    z-index: 1;
+    bottom: 15px;
+}
+
+.curved-line{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    z-index: -1;
+    margin-top: -.25rem;
+    border-radius: 50% 1000px;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+.trend_content{
+    height: 100vh;
+    background-color: rgb(17, 14, 31);
+    position: relative;
+    margin: auto;
+    width: 80%;
+    bottom: 20px;
+
+}
+.scrol{
+    height: 280px;
+    white-space: nowrap;
+    overflow-y:hidden;
+    overflow-x: auto;
+    padding: 10px;
+    
+}
+.movies{
+    height: 230px ;
+    width: 150px;
+    background-color: red;
+    display: inline-block;
+    margin: 20px 20px 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.18s linear ;
+    border-radius: 15px;
+    cursor: pointer;
+    scrollbar-width: 0px;
+}
+#m1{
+    background-image: url(https://www.film-rezensionen.de/wp-content/uploads/2024/12/Squid-Game-Staffel-2.jpg);
+    
+}
+#m2{
+    background-image: url(https://images.filmibeat.com/ph-big/2024/11/bhool-bhulaiyaa-3-ott-release-date-announced1730441588_0.jpg);
+    
+}
+#m3{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMjEzN2ZjYjUtZTI3NC00MzMyLWJiNDAtMDBiZGEzNTBiY2RkXkEyXkFqcGc@._V1_.jpg);
+}
+#m4{
+    background-image: url(https://www.adgully.com/img/800/202108/screenshot-2021-08-23-095153.jpg);
+}
+#m5{
+    background-image: url(https://resizing.flixster.com/ra1n0-jmQobKgbNivqoY2PLdhnc=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vYTFiNjhhNzItODQ5Zi00MzdjLTliZTQtODI2OTVjZTYyYTRiLmpwZw==);
+}
+#m6{
+    background-image: url(https://images.deccanherald.com/deccanherald/2024-12-19/flwqa820/Screenshot-2024-12-19-142117.png?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true);
+}
+#m7{
+    background-image: url(https://images.filmibeat.com/img/2024/10/venom2-1729941323.jpg);
+}
+#m8{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BZTllYjYzMDgtNDZiZi00MjBkLWFkYWYtZTBlZDc3N2E0MTczXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);
+}
+#m9{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BNTAzMGQ2MGItMjk5OC00YWIwLThmMjUtYmNjMTIxNzVlZWQ4XkEyXkFqcGc@._V1_.jpg);
+}
+#m0{
+    background-image: url(https://m.media-amazon.com/images/I/61boFr6SYZL.jpg);
+}
+.movies:hover{
+    transform: scale(1.051);
+}
+.scrol::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit-based browsers (Chrome, Edge, Safari) */
+  }
+.more h2{
+    font-family:  Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+
+}
+body{
+    background-color: rgba(17, 14, 31, 1);
+}
+.join{
+    margin-top: 10px;
+    
+    width: 80vw;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.more_join h1+p{
+    margin-top: 1.8rem;
+    color: rgba(255, 255, 255, 0.551);
+}
+.more_join{
+    position: relative;
+    font-family:  Helvetica, sans-serif;
+    height: 300px;
+    width: 250px;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(35, 14, 0), rgb(6, 6, 31),rgb(1, 1, 67));   }
+.more_join svg{
+    position: absolute;
+    right: 10px;
+   
+}
+    @media(max-width:1400px){
+        .more_join{
+            height: 200px;
+            width: 100%;
+            /* align-content: space-evenly; */
+
+        }
+        .more_join h{
+            font-size: 20px;
+        }
+    }
+
+.que{
+    height: 100vh;
+    color: white;
+    font-family:  Helvetica, sans-serif;
+    width: 80vw;
+    margin: auto;
+    margin-top: 30px;
+    
+    
+}
+.f1 {
+    margin-top: 15px;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(90, 90, 90, 0.467);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0;
+    margin-bottom: 20px;
+  }
+  
+  #check{
+    display: none;
+  }
+  
+  i {
+    cursor: pointer;
+  }
+  
+  #con {
+    position: relative;
+    margin-top: 2px;
+    padding: 15px;
+    background-color: rgba(128, 128, 128, 0.281);
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: white; 
+    display: none; 
+  }
+  
+  #check:checked~#con {
+    /* color: red;  */
+    display: block;
+  }
+  .f2{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(90, 90, 90, 0.467);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0;
+    margin-bottom: 20px;
+
+  }
+  #check2{
+    display: none;
+  }
+  
+  i {
+    cursor: pointer;
+  }
+  
+  #con2 {
+    position: relative;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: rgba(128, 128, 128, 0.281);
+    width: 100%;
+    /* height: 150px; */
+    font-size: 20px;
+    text-align: center;
+    color: white; 
+    display: none; 
+  }
+  
+  #check2:checked~#con2 {
+    /* color: red;  */
+    display: block;
+  }
+
+  /* 3 */
+  .f3{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(90, 90, 90, 0.467);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0;
+    margin-bottom: 20px;
+
+  }
+  #check3{
+    display: none;
+  }
+  
+  i {
+    cursor: pointer;
+  }
+  
+  #con3 {
+    position: relative;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: rgba(128, 128, 128, 0.281);
+    width: 100%;
+    /* height: 150px; */
+    font-size: 20px;
+    text-align: center;
+    color: white; 
+    display: none; 
+  }
+  
+  #check3:checked~#con3 {
+    /* color: red;  */
+    display: block;
+  }
+  /* 4 */
+  .f4{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(90, 90, 90, 0.467);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0;
+    margin-bottom: 20px;
+
+  }
+  #check4{
+    display: none;
+  }
+  
+  i {
+    cursor: pointer;
+  }
+  
+  #con4 {
+    position: relative;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: rgba(128, 128, 128, 0.281);
+    width: 100%;
+    /* height: 150px; */
+    font-size: 20px;
+    text-align: center;
+    color: white; 
+    display: none; 
+  }
+  
+  #check4:checked~#con4 {
+    /* color: red;  */
+    display: block;
+  }
+  /* 5 */
+  .f5{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(90, 90, 90, 0.467);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0;
+    margin-bottom: 20px;
+
+  }
+  #check5{
+    display: none;
+  }
+  
+  i {
+    cursor: pointer;
+  }
+  
+  #con5 {
+    position: relative;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: rgba(128, 128, 128, 0.281);
+    width: 100%;
+    /* height: 150px; */
+    font-size: 20px;
+    text-align: center;
+    color: white; 
+    display: none; 
+  }
+  
+  #check5:checked~#con5 {
+    /* color: red;  */
+    display: block;
+  }
